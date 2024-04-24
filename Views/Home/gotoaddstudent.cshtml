@@ -1,0 +1,22 @@
+@model Project.Models.Models.Vm_Student;
+<form action="/home/addstudent" method="post">
+  <div class="form-group">
+    <label for="exampleInputEmail1">نام</label>
+    <input asp-for="Vm_Name" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="نام خود را وارد کنید">
+    
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">نام خانوادگی</label>
+    <input asp-for="Vm_Family" type="text" class="form-control" id="exampleInputPassword1" placeholder="نام خانوادگی خود را وارد کنید">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">تلفن تماس</label>
+    <input asp-for="Vm_Phone" type="text" class="form-control" id="exampleInputPassword1" placeholder="شماره تلفن خود را وارد کنید">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">کد کلاس</label>
+    <input asp-for="Vm_ClassCode" type="number" class="form-control" id="exampleInputPassword1" placeholder="کد کلاس را وارد کنید">
+  </div>
+  
+  <button type="submit" class="btn btn-primary">ارسال</button>
+</form>
